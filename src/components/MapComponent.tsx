@@ -1,4 +1,3 @@
-// src/Map.tsx
 import React, { useState, useCallback } from 'react';
 import {
   GoogleMap,
@@ -60,7 +59,7 @@ const MapComponent: React.FC = () => {
       googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY"
       libraries={['places']}
     >
-      <div style={{ marginBottom: '10px' }}>
+      <div className="container">
         <Autocomplete>
           <input
             type="text"
